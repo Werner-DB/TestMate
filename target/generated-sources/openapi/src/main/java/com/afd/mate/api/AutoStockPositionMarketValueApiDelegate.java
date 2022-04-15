@@ -20,7 +20,7 @@ import javax.annotation.Generated;
  * A delegate to be called by the {@link AutoStockPositionMarketValueApiController}}.
  * Implement this interface with a {@link org.springframework.stereotype.Service} annotated class.
  */
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-04-10T18:00:51.843525606Z[Etc/UTC]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-04-15T08:44:52.405243057Z[Etc/UTC]")
 public interface AutoStockPositionMarketValueApiDelegate {
 
     default Optional<NativeWebRequest> getRequest() {

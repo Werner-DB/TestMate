@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-04-10T18:00:51.843525606Z[Etc/UTC]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2022-04-15T08:44:52.405243057Z[Etc/UTC]")
 @Validated
 @Tag(name = "auto-stock-position-market-value", description = "the auto-stock-position-market-value API")
 public interface AutoStockPositionMarketValueApi {

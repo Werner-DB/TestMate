@@ -6,6 +6,7 @@ import com.afd.mate.domain.service.StockPositionRepository;
 import org.assertj.core.data.Offset;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -25,7 +26,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
 @SpringBootTest
-@TestPropertySource(properties = "spring.mongodb.embedded.version=3.5.5")
+@TestPropertySource("classpath:application.properties")
 public class GetStockPositionAndMarketValueApiE2ETest {
 
     @Autowired private ApplicationContext context;
