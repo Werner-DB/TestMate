@@ -32,10 +32,60 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GetStockPositionAndMarketValueApiResponseDTOAuto'
+  /auto-stock-position-market-value/add:
+    post:
+      summary: Add a new Symbol
+      description: Returns PostStockPositionAndMarketValueApiResponseDTO
+      consumes :
+        - application/json
+      parameters :
+        -in: body
+        name : symbol
+        description : The symbol to add
+        schema :
+          type: object
+          properties:
+            symbol:
+              type: string
+            quantity:
+              type: number
+              format: double
+              currencyCode:
+                type: string
+              cost:
+                type: number
+                format: double
+              marketValue:
+                type: number
+                format: double
+      responses:
+        201:
+          description: Symbol created
+        401:
+          description: Symbol format not accepted
+
     
   
 components:
   schemas:
+    PostStockPositionAndMarketValueApiResponseDTOAuto:
+      type: object
+      properties:
+        symbol:
+          type: string
+        quantity:
+          type: number
+          format: double
+          currencyCode:
+            type: string
+          cost:
+            type: number
+            format: double
+          marketValue:
+            type: number
+            format: double
+
+
     GetStockPositionAndMarketValueApiResponseDTOAuto:
       type: object
       properties:
